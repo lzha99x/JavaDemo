@@ -1,11 +1,11 @@
 package JavaPattern.Stingleton;
 
-public class Stingleton {
-	private static Stingleton uniqueInstance;
+public class StingletonThreadSafe {
+	private static StingletonThreadSafe uniqueInstance;
 	
-	private Stingleton() {}
+	private StingletonThreadSafe() {}
 	
-	public static  Stingleton getInstance() {
+	public static synchronized StingletonThreadSafe getInstance() {
 
 		if ( uniqueInstance == null) {
 			try {
@@ -14,7 +14,7 @@ public class Stingleton {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			uniqueInstance = new Stingleton();
+			uniqueInstance = new StingletonThreadSafe();
 		}
 		return uniqueInstance;
 	}
