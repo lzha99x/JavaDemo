@@ -1,8 +1,6 @@
-package algorithm.greedy_algorithm;
+package greedy_algorithm;
 
-import java.lang.annotation.Documented;
 import java.util.Arrays;
-import java.util.Scanner;
 
 class Pirate {
     private static double[] weights = {2.0,3.0,1,56,4,7,9,5};

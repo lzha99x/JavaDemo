@@ -1,4 +1,4 @@
-package algorithm.greedy_algorithm;
+package greedy_algorithm;
 
 public class Meet {
     int begin;

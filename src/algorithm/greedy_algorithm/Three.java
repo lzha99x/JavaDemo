@@ -1,4 +1,4 @@
-package algorithm.greedy_algorithm;
+package greedy_algorithm;
 
 public class Three {
     double w; //重量
